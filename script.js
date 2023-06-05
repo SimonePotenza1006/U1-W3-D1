@@ -302,7 +302,7 @@ console.log(findTheOldestMovie())
 
     const sumOfAllYears = function(){
         const sum=movies.reduce((acc, currentValue) =>{
-            return acc + parseInt(currentValue.Year)
+            return acc + (parseInt(currentValue.Year))
         })
         return sum        
     }
