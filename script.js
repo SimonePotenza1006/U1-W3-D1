@@ -93,6 +93,9 @@ incrementedArr = (arr6) => arr6.map(num => num + 1)
   es.: ["EPICODE", "is", "great"] => [7, 2, 5]
 */
 
+const string7 = ["EPICODE", "is", "great"]
+
+
 /* ESERCIZIO 8 (forEach o for)
   Scrivi una funzione per creare un array contenente tutti i valori DISPARI da 1 a 99.
 */
