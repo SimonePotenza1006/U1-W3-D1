@@ -72,23 +72,19 @@ sumForEach()
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
 
-/*arr1 [1, 3, 5, 7, 9]
+arr1 = [1, 3, 5, 7, 9]
 
-total2 = (arr1) => arr1.reduce((total, number) => total + number)
+total = (arr1) => arr1.reduce((total, number) => total + number)
 
-console.log (total2 (arr1))
+console.log (total (arr1))
 
 /* ESERCIZIO 6 (map)
   Scrivi una funzione che, dato un array di soli numeri e un numero n come parametri, ritorni un secondo array con tutti i valori del precedente incrementati di n
 */
 
-myNumberArrey1 = [1, 2, 3, 4]
+const arr6 = [1, 2, 3, 4]
 
-const numPlus = (myArray = myNumberArrey1, n) => {
-    const plus = myArray.map((myArray) => myArray + n)
-    console.log(plus)
-  }
-  numPlus(myNumberArrey1, 7)
+incrementedArr = (arr6) => arr6.map(num => num + 1)
 
 
 
@@ -220,6 +216,19 @@ const movies = [
   /* ESERCIZIO 9 (forEach)
     Scrivi una funzione per trovare il film più vecchio nell'array fornito.
   */
+
+    let year = Number(movies[0].Year)
+    let name = ""
+    const oldestMovie = (myArray = movies) => {
+      const scroll = myArray.forEach((element) => {
+        if( Number(element.Year) < year) {
+          year = Number(element.Year)
+          name = element.Title
+        }
+      })
+      console.log(name)
+    }
+    oldestMovie()
   
   /* ESERCIZIO 10
     Scrivi una funzione per ottenere il numero di film contenuti nell'array fornito.
